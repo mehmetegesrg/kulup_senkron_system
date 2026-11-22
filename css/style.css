@@ -1,0 +1,259 @@
+/* 
+   Web Programlama 1 Dersi - BİT Kulübü Sitesi
+   Öğrenci Stil Dosyası
+*/
+
+/* Temel Renkler ve Değişkenler */
+:root {
+  --primary: #e11d48;
+  --primary-hover: #be123c;
+  --dark: #0f172a;
+  --gray-bg: #f8fafc;
+  --gray-border: #e2e8f0;
+  --text-main: #1e293b;
+  --text-muted: #64748b;
+  --font-family: 'Plus Jakarta Sans', Arial, sans-serif;
+}
+
+/* Genel Sıfırlama */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--gray-bg);
+  color: var(--text-main);
+  line-height: 1.6;
+}
+
+/* Üst Menü Tasarımı */
+.navbar-clean {
+  background-color: #ffffff;
+  border-bottom: 1px solid var(--gray-border);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1030;
+}
+
+/* Logo ve Kulüp İsmi */
+.brand-title {
+  font-weight: 800;
+  font-size: 1.3rem;
+  color: var(--dark);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.brand-icon {
+  width: 36px;
+  height: 36px;
+  background-color: var(--primary);
+  color: #ffffff;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Linkler ve Hover Efektleri */
+.nav-link {
+  font-weight: 600;
+  color: #475569 !important;
+  transition: color 0.2s ease;
+  padding: 0.5rem 0.9rem !important;
+  position: relative;
+}
+
+.nav-link:hover, 
+.nav-link.active {
+  color: var(--primary) !important;
+}
+
+.nav-link.active::after {
+  content: '';
+  position: absolute;
+  bottom: 0px;
+  left: 0.9rem;
+  right: 0.9rem;
+  height: 2px;
+  background-color: var(--primary);
+  border-radius: 2px;
+}
+
+/* Üst Sağ Butonlar */
+.btn-login-outline {
+  color: var(--primary);
+  border: 1px solid #fecdd3;
+  background-color: #fff1f2;
+  font-weight: 600;
+  font-size: 0.85rem;
+  padding: 0.4rem 1.1rem;
+  border-radius: 20px;
+  transition: all 0.2s ease;
+}
+
+.btn-login-outline:hover {
+  background-color: var(--primary);
+  color: #ffffff;
+  border-color: var(--primary);
+}
+
+/* Mega Menü / Görseldeki Gibi İki Kolonlu Açılır Menü Tasarımı */
+.dropdown-mega-menu {
+  min-width: 440px;
+  border-radius: 16px;
+  padding: 1rem;
+  border: 1px solid rgba(0,0,0,0.06);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+}
+
+.menu-item-card {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.55rem 0.7rem;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: background-color 0.15s ease;
+}
+
+.menu-item-card:hover {
+  background-color: #f8fafc;
+}
+
+.menu-icon-box {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.05rem;
+  flex-shrink: 0;
+}
+
+/* Resimdeki İkon Kutusu Renkleri */
+.icon-cyan { background-color: #e0f2fe; color: #0284c7; }
+.icon-pink { background-color: #ffe4e6; color: #e11d48; }
+.icon-teal { background-color: #ccfbf1; color: #0d9488; }
+.icon-rose { background-color: #fce7f3; color: #db2777; }
+.icon-amber { background-color: #fef3c7; color: #d97706; }
+.icon-blue { background-color: #e0e7ff; color: #4f46e5; }
+.icon-green { background-color: #dcfce7; color: #16a34a; }
+.icon-orange { background-color: #ffedd5; color: #ea580c; }
+
+.menu-text-title {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--dark);
+  line-height: 1.2;
+}
+
+.menu-text-desc {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  line-height: 1.2;
+  margin-top: 2px;
+}
+
+/* Kendi Tanımladığımız Özel Butonlar */
+.btn-primary-custom {
+  background-color: var(--primary);
+  color: #ffffff !important;
+  font-weight: 500;
+  border-radius: 6px;
+  padding: 0.5rem 1.2rem;
+  border: none;
+  transition: background-color 0.2s;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-primary-custom:hover {
+  background-color: var(--primary-hover);
+}
+
+.btn-outline-custom {
+  background-color: transparent;
+  color: var(--primary) !important;
+  border: 1px solid var(--primary);
+  font-weight: 500;
+  border-radius: 6px;
+  padding: 0.5rem 1.2rem;
+  transition: all 0.2s;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-outline-custom:hover {
+  background-color: var(--primary);
+  color: #ffffff !important;
+}
+
+/* Ana Sayfa Giriş (Hero) Alanı */
+.hero-box {
+  background-color: #ffffff;
+  border: 1px solid var(--gray-border);
+  border-radius: 12px;
+  padding: 2.5rem;
+}
+
+/* Sayı Kutuları (Grid / Flexbox) */
+.stat-box {
+  background: #ffffff;
+  border: 1px solid var(--gray-border);
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.stat-number {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+/* Kartlar ve Üzerine Gelme Efekti */
+.card-custom {
+  border: 1px solid var(--gray-border);
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.03);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card-custom:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.07);
+}
+
+/* Tablo Kapsayıcısı */
+.table-container {
+  background: #ffffff;
+  border: 1px solid var(--gray-border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Alt Kısım (Footer) */
+.footer-clean {
+  background-color: #ffffff;
+  border-top: 1px solid var(--gray-border);
+  padding: 1.5rem 0;
+  margin-top: 3rem;
+}
+
+/* Mobil ve Tablet Uyumluluk Ayarları */
+@media (max-width: 768px) {
+  .hero-box {
+    padding: 1.5rem;
+  }
+  .dropdown-mega-menu {
+    min-width: 100%;
+  }
+}
