@@ -1,0 +1,4 @@
+# Git Ignore
+.gemini/
+*.tmp
+*.log

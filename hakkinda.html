@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kırklareli Üniversitesi BİT Kulübü - Hakkımızda">
+  <title>BİT Kulübü - Hakkımızda</title>
+
+  <!-- Yazı Tipi -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap Kütüphanesi -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+  <!-- Kendi CSS Dosyamız -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Üst Menü -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-clean">
+      <div class="container">
+        <a class="brand-title" href="index.html">
+          <div class="brand-icon"><i class="bi bi-cpu"></i></div>
+          <span>BİT<span class="text-danger">KULÜP</span></span>
+        </a>
+
+        <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-label="Menüyü Aç">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 align-items-lg-center">
+            <li class="nav-item"><a class="nav-link" href="index.html">Ana Sayfa</a></li>
+            <li class="nav-item"><a class="nav-link active" href="hakkinda.html">Hakkımızda</a></li>
+
+            <!-- Topluluk Açılır Menüsü (Resimdeki Kategoriler) -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="toplulukDropHakkinda" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Topluluk
+              </a>
+              <div class="dropdown-menu dropdown-mega-menu shadow" aria-labelledby="toplulukDropHakkinda">
+                <div class="row g-2">
+                  <div class="col-12 col-md-6">
+                    <a href="hakkinda.html#departmanlar" class="menu-item-card">
+                      <div class="menu-icon-box icon-cyan"><i class="bi bi-layers"></i></div>
+                      <div>
+                        <div class="menu-text-title">Departmanlar</div>
+                        <div class="menu-text-desc">Komitelerimizin yapısı</div>
+                      </div>
+                    </a>
+
+                    <a href="uyeler.html" class="menu-item-card">
+                      <div class="menu-icon-box icon-pink"><i class="bi bi-search"></i></div>
+                      <div>
+                        <div class="menu-text-title">Üyelerimiz</div>
+                        <div class="menu-text-desc">Geliştirici kadromuz</div>
+                      </div>
+                    </a>
+
+                    <a href="etkinlikler.html" class="menu-item-card">
+                      <div class="menu-icon-box icon-rose"><i class="bi bi-file-earmark-text"></i></div>
+                      <div>
+                        <div class="menu-text-title">Duyurular &amp; Blog</div>
+                        <div class="menu-text-desc">Yazı ve haberlerimiz</div>
+                      </div>
+                    </a>
+
+                    <a href="hakkinda.html#sponsorlar" class="menu-item-card">
+                      <div class="menu-icon-box icon-teal"><i class="bi bi-award"></i></div>
+                      <div>
+                        <div class="menu-text-title">Sponsorlar</div>
+                        <div class="menu-text-desc">Kurumsal ortaklar</div>
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="col-12 col-md-6">
+                    <a href="uyeler.html" class="menu-item-card">
+                      <div class="menu-icon-box icon-pink"><i class="bi bi-people"></i></div>
+                      <div>
+                        <div class="menu-text-title">Yönetim Ekibi</div>
+                        <div class="menu-text-desc">Yönetim kadrosu</div>
+                      </div>
+                    </a>
+
+                    <a href="etkinlikler.html" class="menu-item-card">
+                      <div class="menu-icon-box icon-cyan"><i class="bi bi-calendar3"></i></div>
+                      <div>
+                        <div class="menu-text-title">Etkinlikler</div>
+                        <div class="menu-text-desc">Takvim ve planlar</div>
+                      </div>
+                    </a>
+
+                    <a href="galeri.html" class="menu-item-card">
+                      <div class="menu-icon-box icon-rose"><i class="bi bi-stars"></i></div>
+                      <div>
+                        <div class="menu-text-title">Galeri</div>
+                        <div class="menu-text-desc">Etkinlik fotoğrafları</div>
+                      </div>
+                    </a>
+
+                    <a href="hakkinda.html#sikca-sorulanlar" class="menu-item-card">
+                      <div class="menu-icon-box icon-pink"><i class="bi bi-question-circle"></i></div>
+                      <div>
+                        <div class="menu-text-title">Destek &amp; SSS</div>
+                        <div class="menu-text-desc">Sıkça sorulan sorular</div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="nav-item"><a class="nav-link" href="hakkinda.html#departmanlar">Departmanlarımız</a></li>
+            <li class="nav-item"><a class="nav-link" href="iletisim.html">İletişim</a></li>
+          </ul>
+
+          <div class="d-flex align-items-center gap-3">
+            <span class="small text-muted d-flex align-items-center gap-1 cursor-pointer">
+              <i class="bi bi-globe"></i> TR
+            </span>
+            <button class="btn btn-login-outline d-flex align-items-center gap-1" data-bs-toggle="modal" data-bs-target="#adminLoginModal">
+              <i class="bi bi-box-arrow-in-right"></i> Giriş Yap
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Ana İçerik -->
+  <main class="container my-5">
+    
+    <div class="text-center mb-5">
+      <h1 class="display-6 fw-bold">Biz Kimiz?</h1>
+      <p class="text-muted">Kırklareli Üniversitesi Bilişim ve Teknoloji Kulübü Hikayesi</p>
+    </div>
+
+    <!-- Misyon ve Vizyon Kartları -->
+    <div class="row g-4 mb-5">
+      <div class="col-12 col-md-6">
+        <div class="card card-custom p-4 h-100">
+          <h2 class="h5 fw-bold text-danger mb-3"><i class="bi bi-bullseye me-2"></i>Misyonumuz</h2>
+          <p class="text-muted mb-0">
+            Mühendislik ve bilişim alanındaki öğrencilerin pratik beceriler kazanmasını sağlamak, onları sektörden uzmanlarla buluşturmak ve takım çalışması kültürünü aşılamaktır.
+          </p>
+        </div>
+      </div>
+      <div class="col-12 col-md-6">
+        <div class="card card-custom p-4 h-100">
+          <h2 class="h5 fw-bold text-danger mb-3"><i class="bi bi-eye me-2"></i>Vizyonumuz</h2>
+          <p class="text-muted mb-0">
+            Teknofest ve ulusal yazılım yarışmalarında üniversitemizi başarıyla temsil etmek, açık kaynaklı projeler üretmek ve bölgenin en aktif bilişim topluluğu olmaktır.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Departmanlarımız Bölümü -->
+    <div id="departmanlar" class="card card-custom p-4 mb-5">
+      <h3 class="h5 fw-bold mb-3"><i class="bi bi-layers text-danger me-2"></i>Kulüp Departmanlarımız &amp; Komiteler</h3>
+      <div class="row g-3">
+        <div class="col-md-4">
+          <div class="p-3 border rounded-3 bg-light">
+            <h6 class="fw-bold mb-1">Yazılım &amp; Ar-Ge Komitesi</h6>
+            <p class="small text-muted mb-0">Web, mobil ve yapay zeka proje takımlarının çalışmalarını koordine eder.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="p-3 border rounded-3 bg-light">
+            <h6 class="fw-bold mb-1">Etkinlik &amp; Organizasyon</h6>
+            <p class="small text-muted mb-0">Seminer, hackathon ve sosyal sorumluluk buluşmalarını organize eder.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="p-3 border rounded-3 bg-light">
+            <h6 class="fw-bold mb-1">Medya &amp; Tasarım Komitesi</h6>
+            <p class="small text-muted mb-0">Sosyal medya içerikleri, afiş tasarımları ve video kurgularını hazırlar.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sponsorlar & Destekçiler -->
+    <div id="sponsorlar" class="card card-custom p-4 mb-5">
+      <h3 class="h5 fw-bold mb-3"><i class="bi bi-award text-danger me-2"></i>Sponsorlarımız &amp; Kurumsal Ortaklar</h3>
+      <p class="text-muted small mb-3">Kulübümüzün etkinliklerine donanım, staj ve eğitim desteği sağlayan değerli paydaşlarımız:</p>
+      <div class="d-flex flex-wrap gap-3">
+        <span class="badge bg-light text-dark border p-2 px-3 fw-bold">Huawei Student Developers</span>
+        <span class="badge bg-light text-dark border p-2 px-3 fw-bold">Kırklareli Teknokent</span>
+        <span class="badge bg-light text-dark border p-2 px-3 fw-bold">KLÜ Kariyer Merkezi</span>
+        <span class="badge bg-light text-dark border p-2 px-3 fw-bold">Bilişim Vadisi</span>
+      </div>
+    </div>
+
+    <!-- İlkelerimiz (Liste Kullanımı) -->
+    <div class="card card-custom p-4 mb-5">
+      <h3 class="h5 fw-bold mb-3">Kulüp Çalışma İlkelerimiz</h3>
+      <ol class="text-muted ps-3 mb-0">
+        <li class="mb-2"><strong>Uygulamalı Atölyeler:</strong> Teorik bilginin yanında laboratuvarda canlı kodlama oturumları yaparız.</li>
+        <li class="mb-2"><strong>Açık Paylaşım:</strong> Hazırladığımız ders notlarını ve projeleri tüm öğrencilerle paylaşırız.</li>
+        <li class="mb-2"><strong>Birlikte Gelişim:</strong> Üst sınıflar ile yeni başlayan öğrenciler arasında mentorluk köprüsü kurarız.</li>
+        <li><strong>Fırsat Eşitliği:</strong> Hangi bölümde okursa okusun teknolojiye merak duyan herkese kapımız açıktır.</li>
+      </ol>
+    </div>
+
+    <!-- Sıkça Sorulan Sorular (Accordion Bileşeni) -->
+    <div id="sikca-sorulanlar" class="my-5">
+      <h3 class="h5 fw-bold mb-3 text-center">Destek &amp; Sıkça Sorulan Sorular (SSS)</h3>
+      <div class="accordion shadow-sm" id="accordionFAQ">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+              Kulübe kimler üye olabilir?
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionFAQ">
+            <div class="accordion-body text-muted small">
+              Kırklareli Üniversitesi'nde kayıtlı olan her öğrenci bölüm farkı olmaksızın kulübümüze katılabilir.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+              Etkinlikler ve atölyeler ücretli mi?
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+            <div class="accordion-body text-muted small">
+              Hayır, kulübümüzün düzenlediği tüm seminerler, atölyeler ve hackathonlar tamamen ücretsizdir.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+              Yarışma takımlarına nasıl katılabilirim?
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+            <div class="accordion-body text-muted small">
+              Dönem başlarında açılan Teknofest ve proje takımı başvuru formlarını doldurarak katılabilirsiniz.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Sayfa Altı -->
+  <footer class="footer-clean">
+    <div class="container text-center small text-muted">
+      <p class="mb-1">Kırklareli Üniversitesi Yazılım Mühendisliği - Web Programlama 1 Dersi Ödevi</p>
+      <p class="mb-0">BİT Kulübü &copy; 2026</p>
+    </div>
+  </footer>
+
+  <!-- Giriş Yap Modalı -->
+  <div class="modal fade" id="adminLoginModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title fw-bold">Yönetici Girişi</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <div class="p-2 bg-light border rounded-3 mb-3 small">
+            <span class="text-danger fw-bold">Demo Giriş Bilgileri:</span> Kullanıcı: <strong>admin</strong> | Şifre: <strong>admin123</strong>
+          </div>
+          <div class="mb-3">
+            <label class="form-label small fw-bold">Kullanıcı Adı</label>
+            <input type="text" class="form-control" value="admin" readonly>
+          </div>
+          <div class="mb-3">
+            <label class="form-label small fw-bold">Geçici Şifre</label>
+            <input type="password" class="form-control" value="admin123" readonly>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-sm btn-secondary" data-bs-dismiss="modal">İptal</button>
+          <button type="button" class="btn btn-sm btn-primary-custom" data-bs-target="#adminDashboardModal" data-bs-toggle="modal">
+            Giriş Yap ve Panele Git
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Yönetim Paneli Gösterim Modalı -->
+  <div class="modal fade" id="adminDashboardModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header bg-dark text-white">
+          <h5 class="modal-title fw-bold">Kulüp Admin Yönetim Paneli</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row g-3 mb-4 text-center">
+            <div class="col-4">
+              <div class="p-3 bg-light rounded-3 border">
+                <div class="h4 fw-bold text-danger mb-0">852</div>
+                <small class="text-muted">Kayıtlı Üye</small>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="p-3 bg-light rounded-3 border">
+                <div class="h4 fw-bold text-success mb-0">6</div>
+                <small class="text-muted">Aktif Etkinlik</small>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="p-3 bg-light rounded-3 border">
+                <div class="h4 fw-bold text-warning mb-0">3</div>
+                <small class="text-muted">Yeni Başvuru</small>
+              </div>
+            </div>
+          </div>
+          <h6 class="fw-bold mb-2">Hızlı İşlemler</h6>
+          <ul class="list-group list-group-flush border rounded-3 small">
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              <span>Yeni Üye Onayı: Mehmet Arda</span>
+              <span class="badge bg-success">Onaylandı</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              <span>Etkinlik Yayını: Web Geliştirme Hackathonu</span>
+              <span class="badge bg-danger">Yayında</span>
+            </li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-sm btn-dark" data-bs-dismiss="modal">Paneli Kapat</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS Kütüphanesi -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
